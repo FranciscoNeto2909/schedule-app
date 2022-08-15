@@ -39,7 +39,7 @@ const slice = createSlice({
     extraReducers:(build) => {
         build
         .addCase(getSchedules.fulfilled, (state, action) => {
-           return {...state, schedules : action.payload}
+           return {...state, schedules : action.payload.schedules}
         })
     }
 })
