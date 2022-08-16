@@ -25,7 +25,6 @@ export default function AppointmentForm() {
             date:date,
             startTime:tStart,
             endTime:tEnd,
-            status:"Pendente"
         }))
     }
 
