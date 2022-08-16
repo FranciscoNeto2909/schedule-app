@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 const schedulesRuote = "http://localhost:3000"
-
+const postScheduleRoute = "http://localhost:3000/newschedule"
 export const getSchedules = createAsyncThunk("getSchedules", async () => {
     try {
         const res = await axios.get(schedulesRuote)
@@ -10,7 +10,14 @@ export const getSchedules = createAsyncThunk("getSchedules", async () => {
         console.log(error)
     }
 })
-
+export const postSchedule = createAsyncThunk("postschedule", async (scdl) => {
+    try {
+        const res = await axios.post(postScheduleRoute, scdl)
+        return res.data
+    } catch (error) {
+        console.log(error)
+    }
+})
 const slice = createSlice({
     name:"schedule",
     initialState:{
