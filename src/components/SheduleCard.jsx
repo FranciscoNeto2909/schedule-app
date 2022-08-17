@@ -14,7 +14,7 @@ export default function ScheduleCard({ schedule }) {
                 <p className="position-absolute top-0 end-0"> <strong>Data:</strong> {schedule.date}</p>
             </div>
             <div className="card-body mt-1 p-0 pt-1">
-                <h5 className="card-title">Solicitado por: {schedule.requisitioner}</h5>
+                <h5 className="card-title">contratado por: {schedule.requisitioner}</h5>
                 <div>
                     <p className="card-text"><strong>Endereço:</strong> {schedule.address}
                     </p>
