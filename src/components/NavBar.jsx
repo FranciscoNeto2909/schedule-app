@@ -8,7 +8,7 @@ export default function NavBar() {
         dispatch(admOff())
     }
     return (
-        <nav className="d-flex justify-content-center align-items-center border-bottom position-relative" style={{backgroundColor:"#24242a"}}>
+        <nav className="d-flex align-items-center border-bottom position-relative pt-1" style={{backgroundColor:"#24242a"}}>
             <ul className="d-flex mt-2 justify-content-evenly" style={{width:"200px"}}>
                 <li>
                     <Link to="/" className="text-decoration-none">Inicio</Link>
