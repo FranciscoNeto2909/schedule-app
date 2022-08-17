@@ -30,7 +30,7 @@ export default function AppointmentForm() {
         navigate("/")
     }
     return (
-        <div className="container">
+        <div className="container rounded-4 pb-2" style={{ backgroundColor: "rgba(255,255,255,0.07)"}}>
             <h2 className="text-light text-center mt-4">Agendar</h2>
             <div className="row mx-auto mt-3 g-2">
                 <div className="col-md-12 col-lg-12">
@@ -65,10 +65,10 @@ export default function AppointmentForm() {
                     <select id="inputState" className="form-select" value={cType} onChange={e => setCType(e.target.value)} required>
                         <option>Selecione</option>
                         <option value="Tocar na missa">Tocar na missa</option>
-                        <option value="Tocar em celebração">Tocar em celebração</option>
-                        <option value="Tocar em casamento">Tocar em casamento</option>
-                        <option value="Tocar em aniversário">Tocar em aniversário</option>
-                        <option value="Tocar em festa">Tocar em festa</option>
+                        <option value="Tocar em celebração">Tocar na celebração</option>
+                        <option value="Tocar em casamento">Tocar no casamento</option>
+                        <option value="Tocar em aniversário">Tocar no aniversário</option>
+                        <option value="Tocar em festa">Tocar na festa</option>
                     </select>
                 </div>
                 <div className="col-md-3 col-lg-3 col-6">

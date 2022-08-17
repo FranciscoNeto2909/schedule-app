@@ -8,7 +8,7 @@ export default function ScheduleCard({ schedule }) {
         dispatch(deleteSchedule(schedule.id))
     }
     return (
-        <div className="card text-center m-3 text-light border-0 p-1" style={{ backgroundColor: "rgba(255,255,255,0.07)" }}>
+        <div className="card rounded-4 text-center m-3 text-light border-0 p-1" style={{ backgroundColor: "rgba(255,255,255,0.07)"}}>
             <div className="card-header pb-3 position-relative border-warning">
                 <p className="position-absolute top-0">Das {schedule.startTime}h as {schedule.endTime}h</p>
                 <p className="position-absolute top-0 end-0"> <strong>Data:</strong> {schedule.date}</p>

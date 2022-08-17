@@ -36,7 +36,7 @@ const slice = createSlice({
     },
     reducers:{
         admOn:(state)=>{
-            return {...state, isAdm:true}
+            state.isAdm = true
         },
         admOff:(state)=>{
             return {...state, isAdm:false}
@@ -58,5 +58,5 @@ const slice = createSlice({
         })
     }
 })
-
+export const {admOn, admOff, hideMsg, setMsg, showMsg} = slice.actions
 export default slice.reducer

@@ -1,6 +1,6 @@
 export default function NotFound() {
     return (
-        <div>
+        <div className="text-light">
             <h3>Page NotFound</h3>
         </div>
     )
